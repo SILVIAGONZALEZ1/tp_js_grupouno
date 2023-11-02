@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TP INTEGRADOR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
@@ -105,42 +108,88 @@
     </section>
     
 
-    <section class="form" id="form">
-        <div class="title">
-            <h6>CONVIERTETE EN UN</h6>
-            <h2>ORADOR</h2>
-            <h3>Anótate como orador para dar una <span class="underline">charla ignite.</span> Cuéntanos de qué quieres
-                hablar!</h3>
+    <nav id="navbar" class="navbar navbar-expand-xl fixed-top bg-dark" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand me-0" href="#">
+          <img src="assets/img/codoacodo.png" alt="logo de codo a codo" width="120" />
+          <span> Conf Bs As </span>
+        </a>
+        <button class="navbar-toggler fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav fw-semibold" style="font-size: 19px">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Conferencia">La conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Oradores">Los oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Ubicacion">El lugar y la fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#SerOrador">Conviértete en orador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success-emphasis" href="#">Comprar tickets</a>
+            </li>
+          </ul>
         </div>
-        <div class="container-form">
-            <form action="">
-                <div class="first-last-name">
-                    <input type="text" class="input-name" name="input-firtname" placeholder="Nombre" required>
-                    <input type="text" class="input-name" name="input-lastname" placeholder="Apellido" required> 
-                </div>
-                <textarea class="input-about" name="input-about" id="" cols="30" rows="6" placeholder="Sobre qué quieres hablar?" required></textarea>
-                <h6>Recuerda incluir un título para tu charla</h6>
-                <input class="btn-submit" type="submit" value="Enviar">
-            </form>
+      </div>
+    </nav>
+  
+  
+  
+  
+    <section>
+      <div class="text-center">
+        <small class="text-uppercase">conviertete en un</small>
+        <h2 class="text-uppercase">orador</h2>
+        <p>
+          Anotate como orador para dar una <u text-decoration-style: dotted;>charla ignite.</u> Cuentanos de que quieres
+          hablar!
+        </p>
+      </div>
+      <form class="row g-3 w-100 mx-auto" style="max-width: 48rem">
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="nombre" placeholder="Nombre" />
         </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="apellido" placeholder="Apellido" />
+        </div>
+        <div class="col-12">
+          <textarea id="tema" class="form-control" rows="3" placeholder="Sobre qué quieres hablar?"
+            aria-describedby="charla"></textarea>
+          <div id="charla" class="form-text">Recuerda indicar un título para tu charla</div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-success w-100">Enviar</button>
+        </div>
+      </form>
+      </div>
     </section>
-
-    <div id="tickets">
+  
+    <!-- TICKETS -->
+  
+    <!-- CARD GROUP -->
+    <div id="tickets" class="tickets">
       <div class="container-tickets">
-        <div class="tickets-category">
-          <div class="estudiante">
+        <div class="ticket-category card-group gap-3 text-center container-fluid col-6 rounded-5 p-4">
+          <div class="estudiante border border-primary card-body">
             <h3>Estudiante</h3>
             <h5>Tiene un descuento</h5>
             <h2>80%</h2>
             <h6>* presentar documentación</h6>
           </div>
-          <div class="trainee">
+          <div class="trainee border border-success card-body">
             <h3>Trainee</h3>
             <h5>Tiene un descuento</h5>
             <h2>50%</h2>
             <h6>* presentar documentación</h6>
           </div>
-          <div class="junior">
+          <div class="junior border border-warning card-body">
             <h3>Junior</h3>
             <h5>Tiene un descuento</h5>
             <h2>15%</h2>
@@ -148,49 +197,82 @@
           </div>
         </div>
       </div>
-      <div class="tickets-text">
-        <h6>VENTA</h6>
-        <h1>VALOR De TICKET $200</h1>
-      </div>
-
-      <form class="ticketsForm">
-        <div class="tickets-form">
-          <input type="text" class="ticketsFirstName" name="Nombre" placeholder="Nombre">
-          <input type="text" class="ticketsLastName" name="Apellido" placeholder="Apellido">
-          <input type="email" class="ticketsEmail" name="Email" placeholder="Email">
-          <div class="labelTicketQuantity">
-            <label for="Cantidad">Cantidad</label>
-            <input type="text" id="ticketsQuantity" name="Cantidad" placeholder="Cantidad">
+    </div>
+  
+    <!-- Texto Principal-->
+    <div class="tickets-text text-center p-3">
+      <h6>VENTA</h6>
+      <h1>VALOR DE TICKET $200</h1>
+    </div>
+  
+    <!-- FORMULARIO -->
+    <form class="ticketsForm" action="">
+      <div class="tickets-form gap-3 container-fluid col-6 rounded-5 p-3 mb-3">
+        <div class="row">
+          <div class="col">
+            <input type="text" class="ticketsFirstName form-control" name="Nombre" placeholder="Nombre">
           </div>
-          <div class="labelTicketsCategory">
+          <div class="col">
+            <input type="text" class="ticketsLastName form-control" name="Apellido" placeholder="Apellido">
+          </div>
+        </div>
+        <br><input type="email" class="ticketsEmail form-control" name="Email" placeholder="Email">
+  
+        <div class="row">
+          <div class="labelTicketsQuantity col">
+            <label for="Cantidad">Cantidad</label>
+            <input id="ticketsQuantity" type="text" class="ticketsQuantity form-control col" name="Cantidad"
+              placeholder="Cantidad">
+          </div>
+          <div class="labelTicketsCategory col">
             <label for="Categoria">Categoria</label>
-            <select name="Categoria">
+            <select name="Categoria" class="ticketsCategory col form-control">
               <option value="Estudiante">Estudiante</option>
               <option value="Trainee">Trainee</option>
               <option value="Junior">Junior</option>
             </select>
           </div>
         </div>
-        <output class="ticketsOutput"><span class="ticketsValue">Total a pagar:</span></output>
-        <button id="ticketsBorrar">Borrar</button>
-        <button id="ticketsResumen">Resumen</button>
-      </form>
-      
-    </div>
-
-
-    </main>
-    <footer class="footer">
-      <div class="container-footer">
-          <a class="footer-item" href="#">Preguntas frecuentes</a>
-          <a class="footer-item" href="#">Contáctanos</a>
-          <a class="footer-item" href="#">Prensa</a>
-          <a class="footer-item" href="#">Conferencias</a>
-          <a class="footer-item" href="#">Términos y condiciones</a>
-          <a class="footer-item" href="#">Privacidad</a>
-          <a class="footer-item" href="#">Esdudiantes</a>
+        <br><output class="ticketsOutput"><span class="ticketsValue">Total a pagar: $ </span></output>
+        <button id="ticketsBorrar" type="reset" class="btnTickets" name="Borrar">Borrar</button>
+        <button id="ticketsResumen" class="btnTickets" name="Resumen">Resumen</button>
       </div>
-  </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </form>
+  
+  
+    <footer class="mt-4 py-3 bg-dark">
+      <div class="container" data-bs-theme="dark">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-4 text-muted">Preguntas frecuentes</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-4 text-muted">Contáctanos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-4 text-muted">Prensa</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-4 text-muted">Conferencias</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-4 text-muted">Términos y condiciones</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-4 text-muted">Privacidad</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-4 text-muted">Estudiantes</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    
+    <script src="assets/css/script.js"></script>
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
   </body>
 </html>
