@@ -6,7 +6,7 @@ Roles del equipo
 
 Lider Tecnico - Silvia Gonzalez (Provincia: Mendoza)
 
-Devs Front (html, bootstrap) Alexis Henriquez  (Provincia: Santa Cruz) /  Mari 
+Devs Front (html, bootstrap) Alexis Henriquez  (Provincia: Santa Cruz) /  Maria Escalante (Provincia: CABA, Buenos Aires)
 
 Devs Back (javascript) Matias Marquez (Provincia: San Salvador de Jujuy)
 
