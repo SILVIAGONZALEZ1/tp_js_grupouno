@@ -7,14 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-lg">
-            <span><img src="./assets/img/codoacodo.png" alt="Logo CaC"></span>
+            <span><img src="/assets/img/codoacodo.png" alt="Logo CaC"></span>
             <h1 class="navbar-brand-h1 me-auto">Conferencia Bs As</h1>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,12 +21,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" href="#" aria-current="page" href="#">La conferencia</a>
-                    <a class="nav-link" href="#speakers">Los oradores</a>
-                    <a class="nav-link" href="#">El lugar y la fecha</a>
-                    <a class="nav-link" href="#form">Conviertete en orador</a>
-                    <a class="nav-link" href="#">Comprar tickets</a>
-                </div>
+                  <a class="nav-link active" href="#" aria-current="page" href="#">La conferencia</a>
+                  <a class="nav-link" href="#speakers">Los oradores</a>
+                  <a class="nav-link" href="#">El lugar y la fecha</a>
+                  <a class="nav-link" href="#form">Conviertete en orador</a>
+                  <a href="assets/pages/tickets.html">Comprar tickets</a>
+              </div>
             </div>
         </div>
     </nav>
@@ -46,7 +45,7 @@
                         para ti. Te esperamos!</p>
                     <div class="buttonarea">
                         <a class="btn btn-transparent" href="#">Quiero ser orador</a>
-                        <a class="btn btn-solid" href="#">Comprar tickets</a>
+                        <a class="btn btn-solid" href="assets/pages/tickets.html">Comprar tickets</a>
                     </div>
                 </div>
             </div>
@@ -60,7 +59,7 @@
         </div>
         <div class="container-speakers">
             <div class="card">
-                <img src="./assets/img/steve.jpg" alt="Steve Jobs">
+                <img src="assets/img/steve.jpg" alt="Steve Jobs">
                 <div class="skills">
                     <h6 class="yellow">JavaScript</h6>
                     <h6 class="cyan">React</h6>
@@ -70,7 +69,7 @@
                     tempore repellat!</p>
             </div>
             <div class="card">
-                <img src="./assets/img/bill.jpg" alt="Bill Gates">
+                <img src="assets/img/bill.jpg" alt="Bill Gates">
                 <div class="skills">
                     <h6 class="yellow">JavaScript</h6>
                     <h6 class="cyan">React</h6>
@@ -80,7 +79,7 @@
                     tempore repellat!</p>
             </div>
             <div class="card">
-                <img src="./assets/img/ada.jpeg" alt="Ada Lovelace">
+                <img src="assets/img/ada.jpeg" alt="Ada Lovelace">
                 <div class="skills">
                     <h6 class="grey">Negocios</h6>
                     <h6 class="magenta">Startups</h6>
@@ -94,7 +93,7 @@
     
     <section class="call-to-action">
         <div class="container-cta">
-            <img src="./assets/img/honolulu.jpg" alt="Honolulu">
+            <img src="assets/img/honolulu.jpg" alt="Honolulu">
             <div class="cta-content">
                 <h2>Bs As - Octubre</h2>
                 <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos.
@@ -170,75 +169,6 @@
       </form>
       </div>
     </section>
-  
-    <!-- TICKETS -->
-  
-    <!-- CARD GROUP -->
-    <div id="tickets" class="tickets">
-      <div class="container-tickets">
-        <div class="ticket-category card-group gap-3 text-center container-fluid col-6 rounded-5 p-4">
-          <div class="estudiante border border-primary card-body">
-            <h3>Estudiante</h3>
-            <h5>Tiene un descuento</h5>
-            <h2>80%</h2>
-            <h6>* presentar documentación</h6>
-          </div>
-          <div class="trainee border border-success card-body">
-            <h3>Trainee</h3>
-            <h5>Tiene un descuento</h5>
-            <h2>50%</h2>
-            <h6>* presentar documentación</h6>
-          </div>
-          <div class="junior border border-warning card-body">
-            <h3>Junior</h3>
-            <h5>Tiene un descuento</h5>
-            <h2>15%</h2>
-            <h6>* presentar documentación</h6>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    <!-- Texto Principal-->
-    <div class="tickets-text text-center p-3">
-      <h6>VENTA</h6>
-      <h1>VALOR DE TICKET $200</h1>
-    </div>
-  
-    <!-- FORMULARIO -->
-    <form class="ticketsForm" action="">
-      <div class="tickets-form gap-3 container-fluid col-6 rounded-5 p-3 mb-3">
-        <div class="row">
-          <div class="col">
-            <input type="text" class="ticketsFirstName form-control" name="Nombre" placeholder="Nombre">
-          </div>
-          <div class="col">
-            <input type="text" class="ticketsLastName form-control" name="Apellido" placeholder="Apellido">
-          </div>
-        </div>
-        <br><input type="email" class="ticketsEmail form-control" name="Email" placeholder="Email">
-  
-        <div class="row">
-          <div class="labelTicketsQuantity col">
-            <label for="Cantidad">Cantidad</label>
-            <input id="ticketsQuantity" type="text" class="ticketsQuantity form-control col" name="Cantidad"
-              placeholder="Cantidad">
-          </div>
-          <div class="labelTicketsCategory col">
-            <label for="Categoria">Categoria</label>
-            <select name="Categoria" class="ticketsCategory col form-control">
-              <option value="Estudiante">Estudiante</option>
-              <option value="Trainee">Trainee</option>
-              <option value="Junior">Junior</option>
-            </select>
-          </div>
-        </div>
-        <br><output class="ticketsOutput"><span class="ticketsValue">Total a pagar: $ </span></output>
-        <button id="ticketsBorrar" type="reset" class="btnTickets" name="Borrar">Borrar</button>
-        <button id="ticketsResumen" class="btnTickets" name="Resumen">Resumen</button>
-      </div>
-    </form>
-  
   
     <footer class="mt-4 py-3 bg-dark">
       <div class="container" data-bs-theme="dark">

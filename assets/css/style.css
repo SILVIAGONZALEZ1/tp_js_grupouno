@@ -377,6 +377,8 @@
 
 .container-tickets {
     text-align: center;
+    margin-top: 90px;
+    padding: 10px;
 }
 
 .tickets-category {
@@ -390,7 +392,6 @@
     border: 2px solid;
     padding: 10px;
     margin: 10px;
-    border-radius: 8px;
 }
 
 .estudiante {
